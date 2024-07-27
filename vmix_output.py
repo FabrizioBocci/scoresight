@@ -37,8 +37,8 @@ class VMixAPI:
         for key, value in data.items():
             # Prepare the URL
             url = (
-                f"http://{self.host}:{self.port}/api/?Input={self.input_number}&"
-                + f"Function=SetText&SelectedName={key}&Value={value}"
+                f"http://{self.host}:{self.port}/api/?Function=SetText&"
+                + f"Input={self.input_number}&SelectedName={key}&Value={value}"
             )
             try:
                 # Send the request
